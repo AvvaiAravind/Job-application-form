@@ -91,3 +91,9 @@ button:hover {
   transition: 0.3s ease-out;
   cursor: pointer;
 }
+
+@media screen and (max-width:560px) {
+  .input_items,.textarea_items {
+    grid-column: 1;
+  }
+}

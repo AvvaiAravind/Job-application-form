@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ccc;
+  min-height: 100vh;
+  font-family: "Times New Roman", Times, serif;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.content {
+  max-width: 700px;
+  margin: 50px auto;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px black;
+}
+.small_heading {
+  font-size: 1.3rem;
+}
+
+/* .form_box {
+  margin: 1.5rem auto;
+  
+} */
+.form_box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem auto;
+  font-size: 1.5rem;
+}
+.input_items {
+  display: flex;
+  flex-direction: column;
+}
+input,
+select,
+textarea {
+  font: inherit;
+  font-size: 1.2rem;
+  padding: 0.25rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px black;
+}
+.textarea_items {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/3;
+  width: 100%;
+}
+input:hover,
+textarea:hover,
+select:hover {
+  border: 3px solid black;
+  box-shadow: 1px 1px 2px black;
+}
+/* input:active, textarea:active, select:active {
+  border: 2px solid black;
+  box-shadow: 1px 1px 2px black;
+} */
+.button_container {
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+button {
+  margin-top: 10px;
+  font: inherit;
+  font-size: 1.5rem;
+  padding: 0.25rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px black;
+  border: 2px transparent red;
+  background-color: red;
+  padding: 0.5rem;
+  color: white;
+  transition: 0.3s ease-in;
+}
+button:hover {
+  color: black;
+  border: 2px transparent black;
+  box-shadow: 1px 1px 2px black;
+  background-color: #ccc;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
